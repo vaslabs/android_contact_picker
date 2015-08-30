@@ -114,12 +114,6 @@ public class ContactsListFragment extends ListFragment implements
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		int actionId = item.getItemId();
-		if (actionId == R.id.action_add_contact){
-			Intent intent = new Intent(Intent.ACTION_INSERT,
-					ContactsContract.Contacts.CONTENT_URI);
-			startActivity(intent);
-			return true;
-		}
 
 		if (actionId == android.R.id.home){
 			getActivity().finish();
